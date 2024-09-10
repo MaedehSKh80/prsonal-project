@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>آکادمی تاتژن</title>
+    <style>
+      /* استایل کلی کارت‌ها */
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px;
+      }
+
+      .card {
+        width: 30%;
+        height: 300px; /* ارتفاع کارت‌ها */
+        margin: 20px;
+        perspective: 1000px;
+      }
+
+      .card-middle {
+        height: 310px; /* کارت وسطی 10 پیکسل بلندتر */
+      }
+
+      .flip-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+
+      .card:hover .flip-box {
+        transform: rotateY(180deg); /* چرخش فقط برای کارتی که موس روی آن است */
+      }
+
+      .box-front,
+      .box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      .box-front {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      .card-image {
+        width: 100%;
+        height: 70%; /* ارتفاع تصویر متناسب با کارت */
+        object-fit: cover;
+      }
+
+      .box-back {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent; /* پس‌زمینه شفاف برای پشت کارت */
+        transform: rotateY(180deg);
+      }
+
+      .box-back img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* ایجاد یک لایه تیره برای خواندن متن */
+        z-index: 1;
+      }
+
+      .card-back-text {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* تنظیمات نمایش برای موبایل */
+      @media (max-width: 768px) {
+        .card {
+          width: 100%;
+          height: 300px; /* حفظ ارتفاع کارت در موبایل */
+          margin: 10px 0;
+        }
+
+        .card-middle {
+          height: 300px; /* برای موبایل ارتفاع کارت وسطی برابر بقیه کارت‌ها می‌شود */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="flip-container card">
+        <div class="flip-box">
+          <div class="box-front">
+            <img
+              src="../photos/card/cardthree.jpg"
+              alt="Image 1"
+              class="card-image"
+            />
+          </div>
+          <div class="box-back">
+            <img
+              src="../photos/card/cardthree.jpg"
+              alt="Image 1"
+              class="card-image"
+            />
+            <div class="overlay"></div>
+            <h2 class="card-back-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              obcaecati praesentium incidunt facilis quidem repudiandae ea,
+              dolor impedit quaerat, tempore aliquam tenetur illum! Sunt
+              excepturi rerum cupiditate quaerat exercitationem unde!
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-container card card-middle">
+        <div class="flip-box">
+          <div class="box-front">
+            <img
+              src="../photos/card/cardone.jpg"
+              alt="Image 2"
+              class="card-image"
+            />
+          </div>
+          <div class="box-back">
+            <img
+              src="../photos/card/cardone.jpg"
+              alt="Image 2"
+              class="card-image"
+            />
+            <div class="overlay"></div>
+            <h2 class="card-back-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              commodi facere quaerat iusto nesciunt nisi, fugit eos mollitia
+              sequi odio iste rerum dolore. Harum quisquam nihil possimus hic,
+              in minus.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-container card">
+        <div class="flip-box">
+          <div class="box-front">
+            <img
+              src="../photos/card/cardtwo.jpg"
+              alt="Image 3"
+              class="card-image"
+            />
+          </div>
+          <div class="box-back">
+            <img
+              src="../photos/card/cardtwo.jpg"
+              alt="Image 3"
+              class="card-image"
+            />
+            <div class="overlay"></div>
+            <h2 class="card-back-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+              optio ducimus deleniti incidunt odit voluptatum, voluptas harum
+              quia veniam autem exercitationem, quod quis commodi hic libero
+              delectus recusandae velit ratione?
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

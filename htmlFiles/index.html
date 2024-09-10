@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورزشی</title>
+
+    <!-- bootstrap-5 -->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+
+    <!-- fav icon  -->
+    <link rel="icon" type="image/png" href="../photos/logo/sport.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <!-- fonts  -->
+    <link href="../fonts/css/all.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark" data-bs-theme="--bs-tertiary-bg-rgb">
+    <!-- navbar start -->
+    <nav
+      class="navbar navbar-expand-lg bg-black"
+      data-bs-theme="dark"
+      dir="ltr"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="ms-5"
+            src="../photos/logo/sportWhite.png"
+            alt="Bootstrap"
+            width="50"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                خانه
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <div
+            class="btn-group me-5"
+            role="group"
+            aria-label="Basic outlined example"
+          >
+            <button type="button" class="btn btn-dark border">ورود</button>
+            <button type="button" class="btn btn-dark border">ثبت نام</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- slider start  -->
+    <div id="carouselExampleDark" class="carousel carousel-light slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img
+            src="../photos/carosel/three.jpg"
+            class="d-block w-100"
+            alt="sports"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>تو هر زمان و مکانی که میخوای ورزش کن!</h5>
+            <button type="button" class="btn btn-outline-light">
+              همین الان شروع کن <a href="#" class="bi bi-arrow-90deg-left"></a>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="../photos/carosel/one.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../photos/carosel/two.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- slider end  -->
+
+    <!-- about start -->
+    <div class="container-fluid bg-black">
+      <div
+        class="row justify-content-center align-items-center mx-5"
+        style="height: 500px"
+      >
+        <div class="col-5 my-5 text-center">
+          <img
+            src="../photos/about/about.png"
+            style="max-width: 70%"
+            alt="about"
+          />
+        </div>
+        <div class="col-5 text-light text-end">
+          <p>
+            <i class="fa-solid fa-bars-staggered"></i> لورم ایپسوم متن ساختگی با
+            تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+            و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+            ابزارهای کاربردی می باشد.
+          </p>
+          <br />
+          <br />
+          <p>
+            <i class="fa-solid fa-bars-staggered"></i>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشدد.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- about end -->
+
+    <!-- offers start -->
+    <div class="bg-black">
+      <div class="card-container m-0">
+        <div class="flip-container card bg-black my-5">
+          <div class="flip-box bg-black">
+            <div class="box-front">
+              <img
+                src="../photos/card/cardthree.jpg"
+                alt="Image 1"
+                class="card-image"
+              />
+            </div>
+            <div class="box-back">
+              <img
+                src="../photos/card/cardthree.jpg"
+                alt="Image 1"
+                class="card-image"
+              />
+              <div class="overlay"></div>
+              <h2 class="card-back-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container card card-middle bg-black my-5">
+          <div class="flip-box bg-black">
+            <div class="box-front">
+              <img
+                src="../photos/card/cardone.jpg"
+                alt="Image 2"
+                class="card-image"
+              />
+            </div>
+            <div class="box-back">
+              <img
+                src="../photos/card/cardone.jpg"
+                alt="Image 2"
+                class="card-image"
+              />
+              <div class="overlay"></div>
+              <h2 class="card-back-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container card bg-black my-5">
+          <div class="flip-box bg-black">
+            <div class="box-front">
+              <img
+                src="../photos/card/cardtwo.jpg"
+                alt="Image 3"
+                class="card-image"
+              />
+            </div>
+            <div class="box-back">
+              <img
+                src="../photos/card/cardtwo.jpg"
+                alt="Image 3"
+                class="card-image"
+              />
+              <div class="overlay"></div>
+              <h2 class="card-back-text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offers end -->
+
+    <!-- artickle start  -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-6">Column</div>
+      </div>
+    </div>
+
+    <!-- artickle end  -->
+
+    <!-- footer start -->
+    <div style="height: 500px"></div>
+    <!-- footer end  -->
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
