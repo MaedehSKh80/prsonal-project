@@ -51,34 +51,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
-                خانه
-              </a>
+              <a class="nav-link" href="#">دختران قوی</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">مشاوره با ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درباره ی ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تماس با ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">همکاری با ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">مقاله</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">معرفی کتاب</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >خانه</a
               >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
           </ul>
           <div
@@ -178,18 +174,15 @@
 
     <!-- about start -->
     <div class="container-fluid bg-black">
-      <div
-        class="row justify-content-center align-items-center mx-5"
-        style="height: 500px"
-      >
-        <div class="col-5 my-5 text-center">
+      <div class="row justify-content-center align-items-center mx-lg-5">
+        <div class="col-12 col-lg-5 my-5 text-center">
           <img
             src="../photos/about/about.png"
             style="max-width: 70%"
             alt="about"
           />
         </div>
-        <div class="col-5 text-light text-end">
+        <div class="col-12 col-lg-5 text-light text-end">
           <p>
             <i class="fa-solid fa-bars-staggered"></i> لورم ایپسوم متن ساختگی با
             تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
@@ -209,8 +202,87 @@
         </div>
       </div>
     </div>
-
     <!-- about end -->
+
+    <!-- schedule start -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center g-2">
+        <div
+          class="col-12 text-light text-center justify-content-center align-items-center mt-4"
+        >
+          <h3>برنامه هفتگی</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 my-5">
+          <table class="table table-hover table-dark text-center">
+            <thead>
+              <tr>
+                <th scope="col">برنامه</th>
+                <th scope="col">ساعت 10</th>
+                <th scope="col">ساعت 13</th>
+                <th scope="col">ساعت 16</th>
+                <th scope="col">ساعت 20</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">شنبه</th>
+                <td></td>
+                <td></td>
+                <td>یوگا</td>
+                <td>کلیستنیکس</td>
+              </tr>
+              <tr>
+                <th scope="row">یکشنبه</th>
+                <td>کاراته</td>
+                <td>کلیستنیکس</td>
+                <td>پیلاتس</td>
+                <td>بکس</td>
+              </tr>
+              <tr>
+                <th scope="row">دوشنبه</th>
+                <td>کاراته</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">سه شنبه</th>
+                <td></td>
+                <td>بدنسازی</td>
+                <td>پیلاتس</td>
+                <td>بدنسازی</td>
+              </tr>
+              <tr>
+                <th scope="row">چهار شنبه</th>
+                <td>کاراته</td>
+                <td>بکس</td>
+                <td></td>
+
+                <td>پیلاتس</td>
+              </tr>
+              <tr>
+                <th scope="row">پنج شنبه</th>
+                <td></td>
+                <td>یوگا</td>
+                <td>پیلاتس</td>
+                <td>فیتنس</td>
+              </tr>
+              <tr>
+                <th scope="row">جمعه</th>
+                <td>فیتنس</td>
+                <td>بکس</td>
+                <td>پیلاتس</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- schedule end -->
 
     <!-- offers start -->
     <div class="bg-black">
@@ -297,10 +369,46 @@
     <!-- offers end -->
 
     <!-- artickle start  -->
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-md-6"></div>
-        <div class="col-12 col-md-6">Column</div>
+    <div class="card-group m-5" style="margin-bottom: 50px">
+      <div class="card text-bg-dark">
+        <img src="../photos/blog/blogone.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="../photos/blog/blog2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This card has supporting text below as a natural lead-in to
+            additional content.
+          </p>
+          <p class="card-text">
+            <small class="text-body-dark">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="../photos/blog/blog3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -309,7 +417,7 @@
     <!-- footer start -->
     <div class="container">
       <div class="row text-light align-items-center text-light text-center">
-        <div class="col-12 col-md-4 jadid">
+        <div class="col-12 col-md-4">
           <img
             src="../photos/logo/sportWhite.png"
             alt="logo"
@@ -319,8 +427,8 @@
           />
           <h4 class="d-inline m-2 text-center">شعار مد نظر اینجا</h4>
         </div>
-        <div class="col-12 col-md-4 jadid">لینک های مرتبط</div>
-        <div class="col-12 col-md-4 jadid">آدرس دقیق</div>
+        <div class="col-12 col-md-4">لینک های مرتبط</div>
+        <div class="col-12 col-md-4">آدرس دقیق</div>
       </div>
       <div class="row justify-content-center align-items-center text-light">
         <div class="col-12 col-md-4 pb-3 fs-6 fw-light">
@@ -335,11 +443,10 @@
             آدرس : لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
           </p>
         </div>
-        <div class="col-12 col-md-4 text-light fs-6 fw-light">
-          <ul
-            class="list-unstyled text-center align-items-center justify-content-center"
-          >
-            <li class="m-3">
+        <!-- لینک های مرتبط  -->
+        <div class="col-12 col-md-4 text-light">
+          <ul class="list-unstyled text-center" style="padding: 0px">
+            <li class="mb-3">
               <a
                 class="text-decoration-none text-white"
                 href="http://google.com"
@@ -384,7 +491,7 @@
         <div class="col-12 col-md-4 text-light mb-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1726035506330!6m8!1m7!1sCEr3DMh3_MWx-eVi9TPiHA!2m2!1d51.75898057414106!2d-1.21314931716275!3f236.54220870552598!4f11.466453532614025!5f0.49644295824731477"
-            width="500"
+            width="400"
             height="270"
             style="border: 0"
             allowfullscreen=""
