@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فمنین وی آی پی</title>
+
+    <!-- bootstrap-5 -->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+
+    <!-- fav icon  -->
+    <link rel="icon" type="image/png" href="../photos/logo/pink.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <!-- fonts  -->
+    <link href="../fonts/css/all.css" rel="stylesheet" />
+  </head>
+  <body dir="rtl" class="bg-login">
+    <!-- Bootstrap 5 Contact Form Snippet -->
+
+    <div>
+      <div class="container-fluid px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-lg-6 d-none d-sm-block">
+                    <img
+                      src="../photos/login/loginimg.jpg"
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 col-lg-6 p-4">
+                    <div class="text-center">
+                      <div class="h3 fw-light">ورود</div>
+                      <p class="mb-4">ورود به سامانه نوبت دهی</p>
+                      <p class="mb-4 text-muted">
+                        سلام دوست عزیزم اگه میخوای وارد سامانه ی نوبت دهی بشی و
+                        برای حودت و آیندت مشاوره بگیری میتونی از اینجا اقدام
+                        کنی. همچنین از اینجا میتونی با پشتیبانی ما ارتباط برقرار
+                        کنی تا اگه کم و کسری بود برات حلش کنیم. میدونی که ما
+                        همیشه همراه و پشتیبانت هستیم.
+                      </p>
+                    </div>
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                      <!-- Name Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          placeholder="نام"
+                          data-sb-validations="required"
+                        />
+                        <label for="name"> نام خود را وارد کنید</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="name:required"
+                        >
+                          Name is required.
+                        </div>
+                      </div>
+
+                      <!-- password Input -->
+                      <div class="form-floating mb-3">
+                        <input
+                          class="form-control"
+                          id="password"
+                          type="password"
+                          placeholder="password"
+                          data-sb-validations="required,password"
+                        />
+                        <label for="password">password</label>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:required"
+                        >
+                          password is required.
+                        </div>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:email"
+                        >
+                          password is not valid.
+                        </div>
+                      </div>
+
+                      <!-- Submit button -->
+                      <div class="d-grid mb-4">
+                        <button
+                          class="btn btn-primary btn-lg"
+                          id="submitButton"
+                          type="submit"
+                        >
+                          ورود
+                        </button>
+                      </div>
+                    </form>
+                    <!-- End of contact form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

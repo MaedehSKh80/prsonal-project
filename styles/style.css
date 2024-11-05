@@ -9,3 +9,7 @@ body {
   font-family: "lalezar", Arial, sans-serif;
   font-weight: normal;
 }
+.bg-login {
+  background: #df8e71;
+  background: linear-gradient(to right, #8c433b, #ea9086);
+}

@@ -20,18 +20,18 @@
     <!-- fonts  -->
     <link href="../fonts/css/all.css" rel="stylesheet" />
   </head>
-  <body class="bg-dark" data-bs-theme="--bs-tertiary-bg-rgb">
+  <body class="bg-secondary" data-bs-theme="--bs-tertiary-bg-rgb">
     <!-- navbar start -->
     <nav
-      class="navbar navbar-expand-lg bg-black"
-      data-bs-theme="dark"
+      class="navbar navbar-expand-lg bg-white"
+      data-bs-theme="secondary"
       dir="ltr"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
             class="ms-5"
-            src="../photos/logo/pink.png"
+            src="../photos/logo/black.png"
             alt="Bootstrap"
             width="50"
             height="50"
@@ -51,51 +51,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">دختران قوی</a>
+              <a class="nav-link" href="girls.html">دختران قوی</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">مشاوره با ما</a>
+              <a class="nav-link" href="login.html">مشاوره با ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">درباره ی ما</a>
+              <a class="nav-link" href="about.html">درباره ی ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">تماس با ما</a>
+              <a class="nav-link" href="contacts.html">تماس با ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">همکاری با ما</a>
+              <a class="nav-link" href="jobs.html">همکاری با ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">مقاله</a>
+              <a class="nav-link" href="artickle.html">مقاله</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="book.html">معرفی کتاب</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >خانه</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">خانه</a>
             </li>
           </ul>
-          <div
-            class="btn-group me-5"
-            role="group"
-            aria-label="Basic outlined example"
-          >
-            <button type="button" class="btn btn-dark border">ورود</button>
-            <button type="button" class="btn btn-dark border">ثبت نام</button>
-          </div>
+          <button type="button" class="btn btn-light border border-primary">
+            <a href="login.html" class="text-decoration-none text-primary">
+              ثبت نام</a
+            >
+          </button>
         </div>
       </div>
     </nav>
     <!-- navbar end -->
 
     <!-- slider start  -->
-    <div id="carouselExampleDark" class="carousel carousel-light slide">
+    <div id="carouselExamplesecondary" class="carousel carousel-light slide">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#carouselExamplesecondary"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -103,13 +98,13 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#carouselExamplesecondary"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#carouselExamplesecondary"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
@@ -154,7 +149,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleDark"
+        data-bs-target="#carouselExamplesecondary"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -163,7 +158,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleDark"
+        data-bs-target="#carouselExamplesecondary"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -173,7 +168,7 @@
     <!-- slider end  -->
 
     <!-- about start -->
-    <div class="container-fluid bg-black">
+    <div class="container-fluid bg-white">
       <div class="row justify-content-center align-items-center mx-lg-5">
         <div class="col-12 col-lg-5 my-5 text-center">
           <img
@@ -182,7 +177,7 @@
             alt="about"
           />
         </div>
-        <div class="col-12 col-lg-5 text-light text-end">
+        <div class="col-12 col-lg-5 text-dark text-end">
           <p>
             <i class="fa-solid fa-bars-staggered"></i> لورم ایپسوم متن ساختگی با
             تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
@@ -216,7 +211,7 @@
 
       <div class="row">
         <div class="col-12 my-5">
-          <table class="table table-hover table-dark text-center">
+          <table class="table table-hover table-secondary text-center">
             <thead>
               <tr>
                 <th scope="col">برنامه</th>
@@ -286,9 +281,15 @@
 
     <!-- artickle start  -->
     <div class="container-fluid mb-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center mb-3">
+        <div class="col-12 col-lg-4"></div>
+        <div class="col-12 col-lg-4"><h3>اخبار و دانستنی</h3></div>
+        <div class="col-12 col-lg-4"></div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 mx-5">
         <div class="col-12 col-lg-3">
-          <div class="card h-100 bg-black text-secondary">
+          <div class="card h-100 bg-white text-secondary">
             <img
               src="../photos/blog/blogone.jpg"
               class="card-img-top"
@@ -305,36 +306,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-3">
-          <div class="card h-100 bg-black text-secondary">
-            <img
-              src="../photos/blog/blog2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <div class="card h-100 bg-black text-secondary">
-            <img
-              src="../photos/blog/blog3.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <div class="card h-100 bg-black text-secondary">
+          <div class="card h-100 bg-white text-secondary">
             <img
               src="../photos/card/cardtwo.jpg"
               class="card-img-top"
@@ -351,7 +323,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-3">
-          <div class="card h-100 bg-black text-secondary">
+          <div class="card h-100 bg-white text-secondary">
             <img
               src="../photos/blog/blogone.jpg"
               class="card-img-top"
@@ -368,7 +340,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-3">
-          <div class="card h-100 bg-black text-secondary">
+          <div class="card h-100 bg-white text-secondary">
             <img
               src="../photos/blog/blog2.jpg"
               class="card-img-top"
@@ -380,6 +352,16 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center mt-2">
+        <div class="col"></div>
+        <div class="col">
+          <a href="artickle.html" class="btn btn-primary"
+            >ادامه ی مقالات و دانستنی ها
+          </a>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
     <!-- artickle end  -->
@@ -471,7 +453,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-black text-center text-secondary fs-6" dir="ltr">
+    <div class="bg-white text-center text-secondary fs-6" dir="ltr">
       Copyright © 2010-2024 All rights reserved.
     </div>
     <!-- footer end  -->
