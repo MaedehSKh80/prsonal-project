@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,94 +84,230 @@
       </div>
     </nav>
     <!-- navbar end -->
-
-    <!-- footer start -->
-    <div class="container">
-      <div class="row text-light align-items-center text-light text-center">
-        <div class="col-12 col-md-4">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
           <img
-            src="../photos/logo/white.png"
-            alt="logo"
-            class="d-inline"
-            width="60px"
-            height="60px"
+            src="../photos/title/femininehead.jpg"
+            class="d-block w-100"
+            alt="..."
+            width="100%"
           />
-          <h4 class="d-inline m-2 text-center">شعار مد نظر اینجا</h4>
-        </div>
-        <div class="col-12 col-md-4">لینک های مرتبط</div>
-        <div class="col-12 col-md-4">آدرس دقیق</div>
-      </div>
-      <div class="row justify-content-center align-items-center text-light">
-        <div class="col-12 col-md-4 pb-3 fs-6 fw-light">
-          <p class="my-3">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است،
-          </p>
-          <p class="my-3">شماره تماس : 09112234567</p>
-          <p class="my-3">شماره ثابت : 02144861964</p>
-          <p class="my-3">
-            آدرس : لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-          </p>
-        </div>
-        <!-- لینک های مرتبط  -->
-        <div class="col-12 col-md-4 text-light">
-          <ul class="list-unstyled text-center" style="padding: 0px">
-            <li class="mb-3">
-              <a
-                class="text-decoration-none text-white"
-                href="http://google.com"
-              >
-                خدمات ما
-              </a>
-            </li>
-            <li class="mb-3">
-              <a
-                class="text-decoration-none text-white"
-                href="http://google.com"
-              >
-                ارتباط با ما
-              </a>
-            </li>
-            <li class="mb-3">
-              <a
-                class="text-decoration-none text-white"
-                href="http://google.com"
-              >
-                وبلاگ
-              </a>
-            </li>
-            <li class="mb-3">
-              <a
-                class="text-decoration-none text-white"
-                href="http://google.com"
-              >
-                درباره ی ما
-              </a>
-            </li>
-            <li class="mb-3">
-              <a
-                class="text-decoration-none text-white"
-                href="http://google.com"
-              >
-                برنامه های عمومی
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4 text-light mb-2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1726035506330!6m8!1m7!1sCEr3DMh3_MWx-eVi9TPiHA!2m2!1d51.75898057414106!2d-1.21314931716275!3f236.54220870552598!4f11.466453532614025!5f0.49644295824731477"
-            width="400"
-            height="270"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>ارتباط با ما</h5>
+            <p>برای ارتباط با ما از این طریق اقدام کنید.</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- content -->
+    <div>
+      <div class="container px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 rounded-3 shadow-lg">
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <div class="h1 fw-light">ارتباط با ما</div>
+                  <p class="mb-4 text-muted">
+                    برای ارتباط با ما این فرم را پر کرده و نظر خود را بنویسید.
+                  </p>
+                </div>
+
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                  <!-- Name Input -->
+                  <div class="form-floating mb-3">
+                    <input
+                      class="form-control"
+                      id="name"
+                      type="text"
+                      placeholder="Name"
+                      data-sb-validations="required"
+                    />
+                    <label for="name">نام</label>
+                    <div
+                      class="invalid-feedback"
+                      data-sb-feedback="name:required"
+                    >
+                      Name is required.
+                    </div>
+                  </div>
+
+                  <!-- Email Input -->
+                  <div class="form-floating mb-3">
+                    <input
+                      class="form-control"
+                      id="emailAddress"
+                      type="email"
+                      placeholder="آدرس ایمیل"
+                      data-sb-validations="required,email"
+                    />
+                    <label for="emailAddress">آدرس ایمیل</label>
+                    <div
+                      class="invalid-feedback"
+                      data-sb-feedback="emailAddress:required"
+                    >
+                      Email Address is required.
+                    </div>
+                    <div
+                      class="invalid-feedback"
+                      data-sb-feedback="emailAddress:email"
+                    >
+                      ایمیل
+                    </div>
+                  </div>
+
+                  <!-- Message Input -->
+                  <div class="form-floating mb-3">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      type="text"
+                      placeholder="Message"
+                      style="height: 10rem"
+                      data-sb-validations="required"
+                    ></textarea>
+                    <label for="message">پیام</label>
+                    <div
+                      class="invalid-feedback"
+                      data-sb-feedback="message:required"
+                    >
+                      Message is required.
+                    </div>
+                  </div>
+
+                  <!-- Submit button -->
+                  <div class="d-grid">
+                    <button
+                      class="btn btn-primary btn-lg"
+                      id="submitButton"
+                      type="submit"
+                    >
+                      تایید
+                    </button>
+                  </div>
+                </form>
+                <!-- End of contact form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CDN Link to SB Forms Scripts -->
+      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </div>
+
+    <!-- footer start -->
+    <div class="container-fluid bg-dark g-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="col-12 col-lg-8 p-4 text-white">
+            <div class="lc-block">
+              <div editable="rich">
+                <h2 class="fw-bolder">
+                  <i class="fa-solid fa-location-dot"></i> آدرس :
+                </h2>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون.
+                </p>
+              </div>
+            </div>
+
+            <div class="lc-block">
+              <div editable="rich">
+                <h2 class="fw-bolder">
+                  <i class="fa-solid fa-phone-flip"></i> شماره تلفن:
+                </h2>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div editable="rich">
+                <p>021-44885634</p>
+                <p>021-44845634</p>
+                <p>021-43045634</p>
+              </div>
+            </div>
+
+            <div class="lc-block">
+              <div editable="rich">
+                <h2 class="fw-bolder">مشاوره با ما</h2>
+              </div>
+            </div>
+
+            <div class="lc-block">
+              <div editable="rich">
+                <a href="coach.html" class="btn btn-light"
+                  ><i class="fa-solid fa-microphone-lines"></i> تعرفه ها</a
+                >
+                <a href="login.html" class="btn btn-light"
+                  ><i class="fa-solid fa-arrow-right-to-bracket"></i> ورود</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="lc-block">
+            <div class="ratio ratio-16x9" lc-helper="gmap-embed">
+              <iframe
+                src="https://maps.google.com/maps?q=London%2C%20UK&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
+              ></iframe>
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <div class="row min-vh-25 align-items-center text-center">
+        <div class="col-xl-4 mb-5 mb-xl-0">
+          <div class="lc-block">
+            <div class="d-inline-flex">
+              <i class="fa-brands fa-linkedin lead mx-2"> </i>
+              <div class="ms-3 align-self-center" editable="rich">
+                <p>linkedin</p>
+              </div>
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+        <!-- /col -->
+        <div class="col-xl-4 mb-5 mb-xl-0">
+          <div class="lc-block">
+            <div class="d-inline-flex">
+              <i class="fa-brands fa-whatsapp lead mx-2"> </i>
+
+              <div class="ms-3 align-self-center" editable="rich">
+                <p class="lead">09123456789</p>
+              </div>
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+        <!-- /col -->
+        <div class="col-xl-4 mb-5 mb-xl-0">
+          <div class="lc-block">
+            <div class="d-inline-flex">
+              <i class="fa-solid fa-at lead mx-2"> </i>
+
+              <div class="ms-3 align-self-center" editable="rich">
+                <p class="lead">mail@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div>
+        <!-- /col -->
+      </div>
+    </div>
+
     <div class="bg-white text-center text-secondary fs-6" dir="ltr">
       Copyright © 2010-2024 All rights reserved.
     </div>

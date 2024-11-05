@@ -13,3 +13,13 @@ body {
   background: #df8e71;
   background: linear-gradient(to right, #8c433b, #ea9086);
 }
+.bg-about {
+  background: #f3beab;
+  background: linear-gradient(to right, #8c633b, #eab186);
+}
+.glass_background {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+}
